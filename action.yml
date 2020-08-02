@@ -2,13 +2,11 @@
 name: 'update-versions'
 description: 'create and update lean-x.y.z release branches'
 inputs:
-  remote:  # id of input
+  remote:
     description: 'Which remote to push to'
     required: false
     default: 'origin'
-# outputs:
-#   time: # id of output
-#     description: 'The time we greeted you'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
