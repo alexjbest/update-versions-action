@@ -1,5 +1,6 @@
 # Container image that runs your code
-FROM alpine/git:v2.26.2
+FROM samueldebruyn/debian-git:latest
+
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
