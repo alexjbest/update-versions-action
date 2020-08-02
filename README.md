@@ -64,3 +64,10 @@ It will NOT test that anything actually builds.
 If you are waiting for a script that automatically updates your project to the latest Lean/mathlib
 and checks if it builds:
 that script is coming. It is not this one.
+
+## Warning
+
+We do not recommend manually updating the latest `lean-x.y.z` branch directly.
+If it diverges from `master` this action will fail.
+It is safe to manually update older version branches,
+provided that you never revert `master` to that version.
