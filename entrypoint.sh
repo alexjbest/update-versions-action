@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
+git reset --hard HEAD
 branch_name="lean-$(grep -oP 'lean_version = [\s\S]*lean\:\K[\d.]+(?=\")' leanpkg.toml)"
 
 if [ "$branch_name" != "lean-" ]; then
