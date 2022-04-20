@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
+git config --global --add safe.directory `pwd`
 git reset --hard HEAD
 branch_name="lean-$(grep -oP 'lean_version = [\s\S]*lean\:\K[\d.]+(?=\")' leanpkg.toml)"
 
